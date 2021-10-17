@@ -1,8 +1,0 @@
-2021-09-28T13:17:49+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Modules\Editors\DataUsage\Controller.php:128
-Stack trace:
-#0 [internal function]: VisualComposer\Modules\Editors\DataUsage\Controller->sendUsageData(Object(VisualComposer\Application), 'vcv:admin:inite...')
-#1 C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Framework\Container.php(63): ReflectionMethod->invokeArgs(Object(VisualComposer\Modules\Editors\DataUsage\Controller), Array)
-#2 C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Helpers\Traits\EventsFilters.php(50): VisualComposer\Framework\Container->call('sendUsageData', Array)
-#3 C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Framework\Illuminate\Container\Container.php(260): VisualComposer\Modules\Editors\DataUsage\Controller->VisualComposer\Helpers\Traits\{closure}(Object(VisualComposer\Application))
-#4 C:\laragon\www\wordpr in C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Modules\Editors\DataUsage\Controller.php on line 128
-
