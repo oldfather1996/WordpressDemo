@@ -1,0 +1,56 @@
+.slider_about {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    /* margin: 66px 0; */
+    .slider_about__item {
+        text-align: -webkit-center;
+        .slider_about__text-heading {
+            line-height: 30px;
+            font-size: 36px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            color: #000000;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+        .slider_about__img {
+            margin-top: 4.6%;
+            width: 7%;
+        }
+        .slider_about__text-desc {
+            margin-top: 1.6%;
+            max-width: 771px;
+            max-height: 45px;
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'Poppins', sans-serif;
+            color: #777777;
+            font-weight: 400;
+        }
+        .slider_about__text-name {
+            margin-top: 3.4%;
+            font-size: 18px;
+            line-height: 30px;
+            color: #000000;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+        .slider_about__text-wish {
+            font-size: 14px;
+            line-height: 30px;
+            color: #000000;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+        .slider_about__slider--btn {
+            cursor: pointer;
+        }
+    }
+}
+
+.container__border {
+    border-bottom: 1px rgba(0, 0, 0, 0.1) double;
+}

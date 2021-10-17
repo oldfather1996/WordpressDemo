@@ -1,0 +1,38 @@
+2021-10-04T07:14:28+00:00 CRITICAL Uncaught Error: Call to undefined function action_filters() in C:\laragon\www\wordpressDemo\wp-content\themes\theme-base\functions.php:67
+Stack trace:
+#0 C:\laragon\www\wordpressDemo\wp-settings.php(546): include()
+#1 C:\laragon\www\wordpressDemo\wp-config.php(102): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\wordpressDemo\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\wordpressDemo\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\wordpressDemo\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\wordpressDemo\wp-content\themes\theme-base\functions.php on line 67
+
+2021-10-04T07:14:29+00:00 CRITICAL Uncaught Error: Call to undefined function action_filters() in C:\laragon\www\wordpressDemo\wp-content\themes\theme-base\functions.php:67
+Stack trace:
+#0 C:\laragon\www\wordpressDemo\wp-settings.php(546): include()
+#1 C:\laragon\www\wordpressDemo\wp-config.php(102): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\wordpressDemo\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\wordpressDemo\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\wordpressDemo\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\wordpressDemo\wp-content\themes\theme-base\functions.php on line 67
+
+2021-10-04T07:14:45+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Modules\FrontView\PluginsInfoController.php:59
+Stack trace:
+#0 [internal function]: VisualComposer\Modules\FrontView\PluginsInfoController->addBodyClass('demo theme-them...', 'body_class')
+#1 C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Framework\Container.php(63): ReflectionMethod->invokeArgs(Object(VisualComposer\Modules\FrontView\PluginsInfoController), Array)
+#2 C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Helpers\Traits\WpFiltersActions.php(23): VisualComposer\Framework\Container->call('addBodyClass', Array)
+#3 C:\laragon\www\wordpressDemo\wp-includes\class-wp-hook.php(303): VisualComposer\Modules\FrontView\PluginsInfoController->VisualComposer\Helpers\Traits\{closure}('demo theme-them...')
+#4 C:\laragon\www\wordpressDemo\wp-includes\plugin.php(189): WP_Hook->apply_filters('demo theme-them...', Array)
+#5 C: in C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Modules\FrontView\PluginsInfoController.php on line 59
+
+2021-10-04T07:14:45+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Modules\FrontView\PluginsInfoController.php:59
+Stack trace:
+#0 [internal function]: VisualComposer\Modules\FrontView\PluginsInfoController->addBodyClass('demo theme-them...', 'body_class')
+#1 C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Framework\Container.php(63): ReflectionMethod->invokeArgs(Object(VisualComposer\Modules\FrontView\PluginsInfoController), Array)
+#2 C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Helpers\Traits\WpFiltersActions.php(23): VisualComposer\Framework\Container->call('addBodyClass', Array)
+#3 C:\laragon\www\wordpressDemo\wp-includes\class-wp-hook.php(303): VisualComposer\Modules\FrontView\PluginsInfoController->VisualComposer\Helpers\Traits\{closure}('demo theme-them...')
+#4 C:\laragon\www\wordpressDemo\wp-includes\plugin.php(189): WP_Hook->apply_filters('demo theme-them...', Array)
+#5 C: in C:\laragon\www\wordpressDemo\wp-content\plugins\visualcomposer\visualcomposer\Modules\FrontView\PluginsInfoController.php on line 59
+
