@@ -1,0 +1,70 @@
+2021-10-11T02:45:15+00:00 CRITICAL syntax error, unexpected '$args' (T_VARIABLE) in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\widget\class-wp-widget-product.php on line 24
+
+2021-10-11T02:45:20+00:00 CRITICAL syntax error, unexpected '$args' (T_VARIABLE) in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\widget\class-wp-widget-product.php on line 24
+
+2021-10-11T02:45:21+00:00 CRITICAL syntax error, unexpected '$args' (T_VARIABLE) in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\widget\class-wp-widget-product.php on line 24
+
+2021-10-11T02:45:24+00:00 CRITICAL syntax error, unexpected '$args' (T_VARIABLE) in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\widget\class-wp-widget-product.php on line 24
+
+2021-10-11T02:45:45+00:00 CRITICAL syntax error, unexpected ''</div>'' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\widget\class-wp-widget-product.php on line 35
+
+2021-10-11T18:49:11+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php:39
+Stack trace:
+#0 C:\laragon\www\wordpressDemo\wp-includes\template.php(770): require_once()
+#1 C:\laragon\www\wordpressDemo\wp-includes\template.php(716): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\wordpressDemo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\wordpressDemo\wp-content\themes\first-example\index.php(16): get_header()
+#4 C:\laragon\www\wordpressDemo\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wordpressDemo\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wordpressDemo\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php on line 39
+
+2021-10-11T18:49:11+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php:39
+Stack trace:
+#0 C:\laragon\www\wordpressDemo\wp-includes\template.php(770): require_once()
+#1 C:\laragon\www\wordpressDemo\wp-includes\template.php(716): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\wordpressDemo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\wordpressDemo\wp-content\themes\first-example\index.php(16): get_header()
+#4 C:\laragon\www\wordpressDemo\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wordpressDemo\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wordpressDemo\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php on line 39
+
+2021-10-11T18:49:12+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php:39
+Stack trace:
+#0 C:\laragon\www\wordpressDemo\wp-includes\template.php(770): require_once()
+#1 C:\laragon\www\wordpressDemo\wp-includes\template.php(716): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\wordpressDemo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\wordpressDemo\wp-content\themes\first-example\404.php(10): get_header()
+#4 C:\laragon\www\wordpressDemo\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wordpressDemo\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wordpressDemo\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php on line 39
+
+2021-10-11T18:49:15+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php:39
+Stack trace:
+#0 C:\laragon\www\wordpressDemo\wp-includes\template.php(770): require_once()
+#1 C:\laragon\www\wordpressDemo\wp-includes\template.php(716): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\wordpressDemo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\wordpressDemo\wp-content\themes\first-example\index.php(16): get_header()
+#4 C:\laragon\www\wordpressDemo\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wordpressDemo\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wordpressDemo\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php on line 39
+
+2021-10-11T18:49:16+00:00 CRITICAL Uncaught Error: Call to undefined function add_meta_box() in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php:39
+Stack trace:
+#0 C:\laragon\www\wordpressDemo\wp-includes\template.php(770): require_once()
+#1 C:\laragon\www\wordpressDemo\wp-includes\template.php(716): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\wordpressDemo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\wordpressDemo\wp-content\themes\first-example\404.php(10): get_header()
+#4 C:\laragon\www\wordpressDemo\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wordpressDemo\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wordpressDemo\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wordpressDemo\wp-content\themes\first-example\header.php on line 39
+
