@@ -9,44 +9,54 @@ Author URI: https://google.com
 
 function wp_meta_box_form()
 {
-    add_meta_box('form', 'information form of post', 'form_output', 'movie');
+    $args = array(
+        'public'   => true,
+        '_builtin' => false
+    );
+    
+    $output = 'names'; // names or objects, note names is the default
+    $operator = 'and'; // 'and' or 'or'
+    
+    $post_types = get_post_types($args, $output, $operator);
+    foreach ($post_types as $post_type) {
+        add_meta_box('form', 'information form of post', 'form_output', $post_type);
+    }
 }
 add_action('add_meta_boxes', 'wp_meta_box_form');
 function form_output($post)
 {
 
-    wp_nonce_field('save_information','information_nonce');
+    wp_nonce_field('save_information', 'information_nonce');
 
-    $text_heading = get_post_meta($post->ID,'_text_heading',true);
+    $text_heading = get_post_meta($post->ID, '_text_heading', true);
 
     echo '<label for="text_heading">Text_heading : </label>';
-    echo ' <input type="text" id="text_heading" name="text_heading" value="'.esc_attr($text_heading).'"/></br>';
+    echo ' <input type="text" id="text_heading" name="text_heading" value="' . esc_attr($text_heading) . '"/></br>';
 
-    $text_description = get_post_meta($post->ID,'_text_description',true);
-    
+    $text_description = get_post_meta($post->ID, '_text_description', true);
+
     echo '<label for="text_description">text_description : </label>';
-    echo ' <input type="text" id="text_description" name="text_description" value="'.esc_attr($text_description).'"/></br>';
-    
-    $text_name = get_post_meta($post->ID,'_text_name',true);
-    
+    echo ' <input type="text" id="text_description" name="text_description" value="' . esc_attr($text_description) . '"/></br>';
+
+    $text_name = get_post_meta($post->ID, '_text_name', true);
+
     echo '<label for="text_name">text_name : </label>';
-    echo ' <input type="text" id="text_name" name="text_name" value="'.esc_attr($text_name).'"/></br>';
+    echo ' <input type="text" id="text_name" name="text_name" value="' . esc_attr($text_name) . '"/></br>';
 
-    $text_wish = get_post_meta($post->ID,'_text_wish',true);
-    
+    $text_wish = get_post_meta($post->ID, '_text_wish', true);
+
     echo '<label for="text_wish">text_wish : </label>';
-    echo ' <input type="text" id="text_wish" name="text_wish" value="'.esc_attr($text_wish).'"/>';
-
+    echo ' <input type="text" id="text_wish" name="text_wish" value="' . esc_attr($text_wish) . '"/>';
 }
 
 function form_save($post_id)
 {
     $information_nonce = $_POST['information_nonce'];
-    
-    if(!isset($information_nonce)){
+
+    if (!isset($information_nonce)) {
         return;
     }
-    if(!wp_verify_nonce($information_nonce,'save_information')){
+    if (!wp_verify_nonce($information_nonce, 'save_information')) {
         return;
     }
 
@@ -58,9 +68,10 @@ function form_save($post_id)
 
     $text_wish = sanitize_text_field($_POST['text_wish']);
 
-    update_post_meta($post_id,'_text_heading',$text_heading);
-    update_post_meta($post_id,'_text_description',$text_description);
-    update_post_meta($post_id,'_text_name',$text_name);
-    update_post_meta($post_id,'_text_wish',$text_wish);
-}   
-add_action('save_post','form_save');
+    update_post_meta($post_id, '_text_heading', $text_heading);
+    update_post_meta($post_id, '_text_description', $text_description);
+    update_post_meta($post_id, '_text_name', $text_name);
+    update_post_meta($post_id, '_text_wish', $text_wish);
+}
+
+add_action('save_post', 'form_save');

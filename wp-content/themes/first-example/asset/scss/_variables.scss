@@ -96,7 +96,7 @@
 }
 
 @mixin responesive-Plus {
-    @media (min-width: 350px) and (max-width: 767px) {
+    @media (min-width: 414px) and (max-width: 767px) {
         /* header */
         #header {
             overflow: hidden;
@@ -177,7 +177,7 @@
                 width: calc(100% / 2);
             }
             .mobile__row {
-                width: calc(100%);
+                width: calc(100%/4);
             }
             .banner__inside--content {
                 height: 250px;

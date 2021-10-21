@@ -62,6 +62,22 @@
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php
+$args = array(
+	'public'   => true,
+);
+
+$output = 'names'; // names or objects, note names is the default
+$operator = 'and'; // 'and' or 'or'
+
+$post_types = get_post_types($args, $output, $operator);
+
+foreach ($post_types  as $post_type) {
+	echo '<p>' . $post_type . '</p>';
+}
+
+wp_reset_query();
+?>
 <?php wp_footer(); ?>
 
 </body>

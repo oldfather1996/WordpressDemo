@@ -13,8 +13,4 @@ Author URI : facebook.com/knight1996
 license: GPLv2 or later
 Text Domain: Thomas-Plugin
 */
-
-
-
-
 ?>

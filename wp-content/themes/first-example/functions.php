@@ -13,83 +13,89 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
-add_action( 'init', 'lc_custom_post_movie' );
- 
+add_action('init', 'lc_custom_post_movie');
+
 // The custom function to register a movie post type
-function lc_custom_post_movie() {
- 
-  // Set the labels, this variable is used in the $args array
-  $labels = array(
-    'name'               => __( 'Movies' ),
-    'singular_name'      => __( 'Movie' ),
-    'add_new'            => __( 'Add New Movie' ),
-    'add_new_item'       => __( 'Add New Movie' ),
-    'edit_item'          => __( 'Edit Movie' ),
-    'new_item'           => __( 'New Movie' ),
-    'all_items'          => __( 'All Movies' ),
-    'view_item'          => __( 'View Movie' ),
-    'search_items'       => __( 'Search Movies' ),
-    // 'featured_image'     => 'Poster',
-    // 'set_featured_image' => 'Add Poster'
-  );
- 
-  // The arguments for our post type, to be entered as parameter 2 of register_post_type()
-  $args = array(
-    'labels'            => $labels,
-    'description'       => 'Holds our movies and movie specific data',
-    'public'            => true,
-    'menu_position'     => 5,
-    'supports'          => array( 'title',  'thumbnail', ),
-    'has_archive'       => true,
-    'show_in_admin_bar' => true,
-    'show_in_nav_menus' => true,
-    'has_archive'       => true,
-    'query_var'         => 'film'
-  );
- 
-  // Call the actual WordPress function
-  // Parameter 1 is a name for the post type
-  // Parameter 2 is the $args array
-  register_post_type( 'movie', $args);
+function lc_custom_post_movie()
+{
+
+	// Set the labels, this variable is used in the $args array
+	$labels = array(
+		'name'               => __('Slider_about'),
+		'singular_name'      => __('Movie'),
+		'add_new'            => __('Add Slider_about'),
+		'add_new_item'       => __('Add Slider_about'),
+		'edit_item'          => __('Edit Slider_about'),
+		'new_item'           => __('New Slider_about'),
+		'all_items'          => __('All Sider_about'),
+		'view_item'          => __('View Slider_about'),
+		'search_items'       => __('Search Slider_about'),
+		// 'featured_image'     => 'Poster',
+		// 'set_featured_image' => 'Add Poster'
+	);
+
+	// The arguments for our post type, to be entered as parameter 2 of register_post_type()
+	$args = array(
+		'labels'            => $labels,
+		'description'       => 'Something Slider ',
+		'public'            => true,
+		'menu_position'     => 5,
+		'supports'          => array('title',  'thumbnail',),
+		'has_archive'       => true,
+		'show_in_admin_bar' => true,
+		'show_in_nav_menus' => true,
+		'has_archive'       => true,
+		'query_var'         => 'film'
+	);
+
+	// Call the actual WordPress function
+	// Parameter 1 is a name for the post type
+	// Parameter 2 is the $args array
+	register_post_type('movie', $args);
 }
- 
+
 // Hook <strong>lc_custom_post_movie_reviews()</strong> to the init action hook
-add_action( 'init', 'lc_custom_post_movie_reviews' );
- 
+// add_action('init', 'lc_custom_post_movie_reviews');
+
 // The custom function to register a movie review post type
-function lc_custom_post_movie_reviews() {
- 
-  // Set the labels, this variable is used in the $args array
-  $labels = array(
-    'name'               => __( 'Movie Reviews' ),
-    'singular_name'      => __( 'Movie Review' ),
-    'add_new'            => __( 'Add New Movie Review' ),
-    'add_new_item'       => __( 'Add New Movie Review' ),
-    'edit_item'          => __( 'Edit Movie Review' ),
-    'new_item'           => __( 'New Movie Review' ),
-    'all_items'          => __( 'All Movie Reviews' ),
-    'view_item'          => __( 'View Movie Reviews' ),
-    'search_items'       => __( 'Search Movie Reviews' )
-  );
- 
-  // The arguments for our post type, to be entered as parameter 2 of register_post_type()
-  $args = array(
-    'labels'            => $labels,
-    'description'       => 'Holds our movie reviews',
-    'public'            => true,
-    'menu_position'     => 6,
-    'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
-    'has_archive'       => true,
-    'show_in_admin_bar' => true,
-    'show_in_nav_menus' => true,
-    'has_archive'       => true
-  );
- 
-  // Call the actual WordPress function
-  // Parameter 1 is a name for the post type
-  // $args array goes in parameter 2.
-  register_post_type( 'review', $args);
-}
+
+
+// function lc_custom_post_movie_reviews()
+// {
+
+// 	// Set the labels, this variable is used in the $args array
+// 	$labels = array(
+// 		'name'               => __('Movie Reviews'),
+// 		'singular_name'      => __('Movie Review'),
+// 		'add_new'            => __('Add New Movie Review'),
+// 		'add_new_item'       => __('Add New Movie Review'),
+// 		'edit_item'          => __('Edit Movie Review'),
+// 		'new_item'           => __('New Movie Review'),
+// 		'all_items'          => __('All Movie Reviews'),
+// 		'view_item'          => __('View Movie Reviews'),
+// 		'search_items'       => __('Search Movie Reviews')
+// 	);
+
+// 	// The arguments for our post type, to be entered as parameter 2 of register_post_type()
+// 	$args = array(
+// 		'labels'            => $labels,
+// 		'description'       => 'Holds our movie reviews',
+// 		'public'            => true,
+// 		'menu_position'     => 6,
+// 		'supports'          => array('title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
+// 		'has_archive'       => true,
+// 		'show_in_admin_bar' => true,
+// 		'show_in_nav_menus' => true,
+// 		'has_archive'       => true
+// 	);
+
+// 	// Call the actual WordPress function
+// 	// Parameter 1 is a name for the post type
+// 	// $args array goes in parameter 2.
+// 	register_post_type('review', $args);
+// }
+
+
 if (!function_exists('first_example_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -153,6 +159,7 @@ if (!function_exists('first_example_setup')) :
 		// Set up the WordPress core custom background feature.
 		add_theme_support(
 			'custom-background',
+			
 			apply_filters(
 				'first_example_custom_background_args',
 				array(
